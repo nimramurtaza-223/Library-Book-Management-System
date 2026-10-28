@@ -26,8 +26,8 @@ public:
 
     void Insert(BookNode* book);
     BookNode* Remove();
-    bool IsEmpty();
-    bool IsNotEmpty();
+    bool IsEmpty() const;
+    bool IsNotEmpty() const;
     void InsertAt(BookNode* book, int index);
     BookNode* RemoveAt(int index);
     void Swap(int index1, int index2);
