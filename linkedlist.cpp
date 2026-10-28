@@ -49,12 +49,12 @@ BookNode* LinkedList::Remove()
     return book;
 }
 
-bool LinkedList::IsEmpty()
+bool LinkedList::IsEmpty() const
 {
     return head == nullptr;
 }
 
-bool LinkedList::IsNotEmpty()
+bool LinkedList::IsNotEmpty() const
 {
     return head != nullptr;
 }
