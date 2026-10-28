@@ -42,7 +42,10 @@ int main()
 
         case 2:
             cout << "Enter book ID: ";
-            cin >> id;
+            if(!(cin>>id))
+            {
+                cout<<"Invalid book ID.Please enter a number.\n;
+                    cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
             cout << "Enter book title: ";
@@ -50,6 +53,7 @@ int main()
 
             library.Insert(CreateBook(id, title));
             break;
+            }
 
         case 3:
         {
